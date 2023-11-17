@@ -12,7 +12,7 @@ let startTime;
 async function startQuiz() {
     try {
         const selectedQuizValue = document.getElementById("quiz-select").value;
-        const response = await fetch(`${apiUrl}/${selectedQuizValue}`);
+        const response = await fetch(`${https://my-json-server.typicode.com/Ruszeii/Project-3}/${quiz1}`);
         const quizDataFromAPI = await response.json();
 
         if (quizDataFromAPI) {
