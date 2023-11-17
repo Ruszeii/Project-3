@@ -8,22 +8,25 @@ let correctAnswers = 0;
 let answeredQuestions = 0;
 let startTime;
 
-// Function to start the quiz
+// ... (other code)
+
 async function startQuiz() {
     try {
         const selectedQuizValue = document.getElementById("quiz-select").value;
-        const response = await fetch(`${apiUrl}/${selectedQuizValue}`);
-        const quizDataFromAPI = await response.json();
+        const response = await fetch(`${apiUrl}/quizzes`);
+        const quizzesDataFromAPI = await response.json();
 
-        if (quizDataFromAPI) {
-            currentQuiz = quizDataFromAPI.questions;
+        const selectedQuiz = quizzesDataFromAPI.find(quiz => quiz.id === parseInt(selectedQuizValue));
+
+        if (selectedQuiz && selectedQuiz.questions) {
+            currentQuiz = selectedQuiz.questions;
             currentQuestionIndex = 0;
             correctAnswers = 0;
             answeredQuestions = 0;
             startTime = Date.now();
             showNextQuestion();
         } else {
-            console.error('Error loading quiz data:', error);
+            console.error('Error loading quiz data:', selectedQuiz);
             alert('Invalid quiz ID. Please select a valid quiz.');
         }
     } catch (error) {
@@ -31,6 +34,8 @@ async function startQuiz() {
         alert('An error occurred while fetching the quiz data. Please try again later.');
     }
 }
+
+// ... (other code)
 
 // Function to display the next question
 function showNextQuestion() {
