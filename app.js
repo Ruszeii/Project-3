@@ -13,7 +13,7 @@ let startTime;
 async function startQuiz() {
     try {
         const selectedQuizValue = document.getElementById("quiz-select").value;
-        const response = await fetch('db.json');
+        const response = await fetch(apiUrl);
         const quizzesDataFromAPI = await response.json();
 
         const selectedQuiz = quizzesDataFromAPI.find(quiz => quiz.id === parseInt(selectedQuizValue));
