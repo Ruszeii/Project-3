@@ -1,5 +1,5 @@
 // Define the quiz data
-const apiUrl = "https://my-json-server.typicode.com/Ruszeii/Project-3";
+const apiUrl = "https://raw.githubusercontent.com/ruszeii/Project-3/main/db.json";
 
 // Global variables
 let currentQuiz = null;
