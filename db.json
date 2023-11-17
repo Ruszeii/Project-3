@@ -56,13 +56,110 @@
           }
         ]
       },
-      // ... More questions for quiz ID 1...
+      {
+        "id": 3,
+        "text": "What is the most popular social media platform?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Facebook",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "text": "Instagram",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "Twitter",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "TikTok",
+            "isCorrect": false
+          }
+        ]
+      }
     ]
   },
   {
     "id": 2,
     "questions": [
-      // Add questions and answer options for quiz ID 2 here...
-    ]
-  }
-]
+      {
+        "id": 1,
+        "text": "What is the chemical symbol for gold?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Au",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "text": "Ag",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "Cu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "Fe",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the capital of Italy?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Rome",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "text": "Milan",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "Naples",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "Turin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the highest mountain in the world?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Mount Everest",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "text": "K2",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "Kangchenjunga",
+            "isCorrect": false
+          },
+          {
