@@ -9,9 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 </head>
 <body>
-    <script> fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json)) 
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+          .then(response => response.json())
+          .then(json => console.log(json));
     </script>
     <div class="container">
         <!-- Main Page -->
@@ -28,8 +29,8 @@
                 <div class="form-group">
                     <label for="quiz-select">Select a Quiz</label>
                     <select class="form-control" id="quiz-select" data-json="quiz1.json">
-                        <option value="quiz1">Quiz 1</option>
-                        <option value="quiz2">Quiz 2</option>
+                        <option value="1">Quiz 1</option>
+                        <option value="2">Quiz 2</option>
                     </select>
                 </div>
 
