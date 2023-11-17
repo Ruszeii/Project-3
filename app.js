@@ -8,13 +8,23 @@ let correctAnswers = 0;
 let answeredQuestions = 0;
 let startTime;
 
-// ... (other code)
+// Function to fetch quiz data from the API
+async function fetchQuizData() {
+    try {
+        const response = await fetch(apiUrl);
+        const quizzesDataFromAPI = await response.json();
+        return quizzesDataFromAPI;
+    } catch (error) {
+        console.error('Error loading quiz data:', error);
+        throw error;
+    }
+}
 
+// Function to start the quiz
 async function startQuiz() {
     try {
         const selectedQuizValue = document.getElementById("quiz-select").value;
-        const response = await fetch(apiUrl);
-        const quizzesDataFromAPI = await response.json();
+        const quizzesDataFromAPI = await fetchQuizData();
 
         const selectedQuiz = quizzesDataFromAPI.find(quiz => quiz.id === parseInt(selectedQuizValue));
 
@@ -30,12 +40,10 @@ async function startQuiz() {
             alert('Invalid quiz ID. Please select a valid quiz.');
         }
     } catch (error) {
-        console.error('Error loading quiz data:', error);
-        alert('An error occurred while fetching the quiz data. Please try again later.');
+        console.error('An error occurred while starting the quiz:', error);
+        alert('An error occurred while starting the quiz. Please try again later.');
     }
 }
-
-// ... (other code)
 
 // Function to display the next question
 function showNextQuestion() {
@@ -62,9 +70,6 @@ function showNextQuestion() {
             label.textContent = answerOption.text;
             label.appendChild(answerOptionElement);
             answerOptionsElement.appendChild(label);
-
-
-            answerOptionsElement.appendChild(answerOptionElement);
         }
 
         currentQuestionIndex++;
@@ -77,7 +82,6 @@ function showNextQuestion() {
 function evaluateAnswer(userAnswer) {
     const currentQuestion = currentQuiz[currentQuestionIndex - 1];
     if (currentQuestion.answerOptions.find(option => option.text === userAnswer && option.isCorrect)) {
-
         correctAnswers++;
         // Display correct answer message
         showFeedbackView('Brilliant!');
