@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "text": "What is the capital of France?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+            { "id": 1, "text": "Paris", "isCorrect": true },
+            { "id": 2, "text": "London", "isCorrect": false },
+            { "id": 3, "text": "Rome", "isCorrect": false },
+            { "id": 4, "text": "Berlin", "isCorrect": false }
+        ]
+    },
+    // Add more questions...
+]
