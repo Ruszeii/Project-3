@@ -13,7 +13,7 @@ let startTime;
 async function startQuiz() {
     try {
         const selectedQuizValue = document.getElementById("quiz-select").value;
-        const response = await fetch(`${apiUrl}/quizzes`);
+        const response = await fetch(apiUrl);
         const quizzesDataFromAPI = await response.json();
 
         const selectedQuiz = quizzesDataFromAPI.find(quiz => quiz.id === parseInt(selectedQuizValue));
@@ -58,7 +58,11 @@ function showNextQuestion() {
             answerOptionElement.type = 'radio';
             answerOptionElement.name = 'answer';
             answerOptionElement.value = answerOption.text;
-            answerOptionElement.textContent = answerOption.text;
+            const label = document.createElement('label');
+            label.textContent = answerOption.text;
+            label.appendChild(answerOptionElement);
+            answerOptionsElement.appendChild(label);
+
 
             answerOptionsElement.appendChild(answerOptionElement);
         }
@@ -72,7 +76,8 @@ function showNextQuestion() {
 // Function to evaluate the user's answer
 function evaluateAnswer(userAnswer) {
     const currentQuestion = currentQuiz[currentQuestionIndex - 1];
-    if (userAnswer === currentQuestion.correctAnswer) {
+    if (currentQuestion.answerOptions.find(option => option.text === userAnswer && option.isCorrect)) {
+
         correctAnswers++;
         // Display correct answer message
         showFeedbackView('Brilliant!');
