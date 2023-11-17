@@ -17,34 +17,52 @@
             "text": "London",
             "isCorrect": false
           },
-          // More answer options...
+          {
+            "id": 3,
+            "text": "Rome",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "Berlin",
+            "isCorrect": false
+          }
         ]
       },
-      // More questions...
+      {
+        "id": 2,
+        "text": "What is the largest country in the world?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Russia",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "text": "Canada",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "China",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "United States",
+            "isCorrect": false
+          }
+        ]
+      },
+      // ... More questions for quiz ID 1...
     ]
   },
   {
     "id": 2,
     "questions": [
-      {
-        "id": 1,
-        "text": "What is the largest planet in our solar system?",
-        "questionType": "multipleChoice",
-        "answerOptions": [
-          {
-            "id": 1,
-            "text": "Jupiter",
-            "isCorrect": true
-          },
-          {
-            "id": 2,
-            "text": "Saturn",
-            "isCorrect": false
-          },
-          // More answer options...
-        ]
-      },
-      // More questions...
+      // Add questions and answer options for quiz ID 2 here...
     ]
   }
 ]
