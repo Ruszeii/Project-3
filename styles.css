@@ -1,5 +1,11 @@
 body {
-    background-color: #f0f0f0;
+    background-color: darkgrey;
+    color: white;
+}
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    color: green;
+    text-align: center;
 }
 
 .container {
@@ -12,9 +18,7 @@ body {
     margin-top: 50px;
 }
 
-h1 {
-    text-align: center;
-}
+
 
 form {
     margin-top: 20px;
