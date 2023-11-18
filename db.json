@@ -100,12 +100,12 @@
         "answerOptions": [
           {
             "id": 1,
-            "text": "To create objects of a class"
+            "text": "To create objects of a class",
             "isCorrect": false
           },
           {
             "id": 2,
-            "text": "To initialize class variables"
+            "text": "To initialize class variables",
             "isCorrect": true
           },
           {
