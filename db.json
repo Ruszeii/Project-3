@@ -4,81 +4,78 @@
     "questions": [
       {
         "id": 1,
-        "text": "What is the capital of France?",
+        "text": "What is the correct way to declare a pointer in C?",
         "questionType": "multipleChoice",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Paris",
+            "text": "int *ptr;",
             "isCorrect": true
           },
           {
             "id": 2,
-            "text": "London",
+            "text": "int ptr;",
             "isCorrect": false
           },
           {
             "id": 3,
-            "text": "Rome",
+            "text": "int &ptr;",
             "isCorrect": false
           },
           {
             "id": 4,
-            "text": "Berlin",
+            "text": "ptr int;",
             "isCorrect": false
           }
         ]
       },
-      {
+       {
         "id": 2,
-        "text": "What is the largest country in the world?",
-        "questionType": "multipleChoice",
+        "text": "Will this run properly?: function add(number1, number2) {
+  if (typeof number1 !== "number" || typeof number2 !== "number") {
+    throw new TypeError("Invalid input");
+  }
+  return number1 + number2;
+}
+// Call the add function with invalid input
+console.log(add("apple", "orange")); ",
+        "questionType": "narrative",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Russia",
-            "isCorrect": true
-          },
-          {
-            "id": 2,
-            "text": "Canada",
-            "isCorrect": false
-          },
-          {
-            "id": 3,
-            "text": "China",
-            "isCorrect": false
-          },
-          {
-            "id": 4,
-            "text": "United States",
-            "isCorrect": false
+            "text": "Yes."
           }
+          {
+           "id": 2,
+            "text": "No."
+          }
+        ]
+      },
         ]
       },
       {
         "id": 3,
-        "text": "What is the most popular social media platform?",
+        "text": "In C, what is the result of sizeof(char)?",
         "questionType": "multipleChoice",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Facebook",
-            "isCorrect": true
+            "text": "2",
+            "isCorrect": false
           },
           {
             "id": 2,
-            "text": "Instagram",
+            "text": "4",
             "isCorrect": false
           },
           {
             "id": 3,
-            "text": "Twitter",
-            "isCorrect": false
+            "text": "1",
+            "isCorrect": true
           },
           {
             "id": 4,
-            "text": "TikTok",
+            "text": "Depends on the compiler",
             "isCorrect": false
           }
         ]
@@ -112,76 +109,72 @@
     "questions": [
       {
         "id": 1,
-        "text": "What is the chemical symbol for gold?",
-        "questionType": "multipleChoice",
+        "text": "Whihc code defines an array in C?",
+        "questionType": "imageSelection",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Au",
-            "isCorrect": true
+            "imageUrl": "java array.png",
+            "isCorrect": false
           },
           {
             "id": 2,
-            "text": "Ag",
+            "imageUrl": "pythonarray.png",
             "isCorrect": false
           },
           {
             "id": 3,
-            "text": "Cu",
-            "isCorrect": false
+            "imageUrl": "carray.png",
+            "isCorrect": true
           },
-          {
-            "id": 4,
-            "text": "Fe",
-            "isCorrect": false
-          }
         ]
       },
-      {
+     {
         "id": 2,
-        "text": "What is the capital of Italy?",
-        "questionType": "multipleChoice",
+        "text": "Will this run properly?: def divide(number1, number2):
+  try:
+    return number1 / number2
+  except ZeroDivisionError:
+    print(Cannot divide by zero)
+  except TypeError:
+    print(Invalid input)
+# Call the divide function with invalid input
+divide(apple, orange)",
+        "questionType": "narrative",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Rome",
-            "isCorrect": true
-          },
+            "text": "Yes."
+          }
           {
-            "id": 2,
-            "text": "Milan",
-            "isCorrect": false
-          },
-          {
-            "id": 3,
-            "text": "Naples",
-            "isCorrect": false
-          },
-          {
-            "id": 4,
-            "text": "Turin",
-            "isCorrect": false
+           "id": 2,
+            "text": "No."
           }
         ]
       },
       {
         "id": 3,
-        "text": "What is the highest mountain in the world?",
+        "text": "What is the output of print(2 + 3 * 4) in Python?",
         "questionType": "multipleChoice",
         "answerOptions": [
           {
             "id": 1,
-            "text": "Mount Everest",
-            "isCorrect": true
+            "text": "20",
+            "isCorrect": false
           },
           {
             "id": 2,
-            "text": "K2",
+            "text": "14",
             "isCorrect": false
           },
           {
             "id": 3,
-            "text": "Kangchenjunga",
+            "text": "11",
+            "isCorrect": true
+            },
+          {
+            "id": 3,
+            "text": "24",
             "isCorrect": false
           }
         ]
