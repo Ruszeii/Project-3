@@ -90,24 +90,19 @@
         "answerOptions": [
           {
             "id": 1,
-            "imageUrl": "path/to/cpu_image_1.jpg",
+            "imageUrl": "cpu.jpg",
             "isCorrect": true
           },
           {
             "id": 2,
-            "imageUrl": "path/to/cpu_image_2.jpg",
+            "imageUrl": "ram.jpg",
             "isCorrect": false
           },
           {
             "id": 3,
-            "imageUrl": "path/to/cpu_image_3.jpg",
+            "imageUrl": "harddrive.jpg",
             "isCorrect": false
           },
-          {
-            "id": 4,
-            "imageUrl": "path/to/cpu_image_4.jpg",
-            "isCorrect": false
-          }
         ]
       }
     ]
