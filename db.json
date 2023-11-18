@@ -82,6 +82,33 @@
             "isCorrect": false
           }
         ]
+      },
+      {
+        "id": 4,
+        "text": "Select the CPU",
+        "questionType": "imageSelection",
+        "answerOptions": [
+          {
+            "id": 1,
+            "imageUrl": "path/to/cpu_image_1.jpg",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "imageUrl": "path/to/cpu_image_2.jpg",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "imageUrl": "path/to/cpu_image_3.jpg",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "imageUrl": "path/to/cpu_image_4.jpg",
+            "isCorrect": false
+          }
+        ]
       }
     ]
   },
