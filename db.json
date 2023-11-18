@@ -29,28 +29,19 @@
           }
         ]
       },
-       {
+      {
         "id": 2,
-        "text": "Will this run properly?: function add(number1, number2) {
-  if (typeof number1 !== "number" || typeof number2 !== "number") {
-    throw new TypeError("Invalid input");
-  }
-  return number1 + number2;
-}
-// Call the add function with invalid input
-console.log(add("apple", "orange")); ",
+        "text": "Will this run properly?: function add(number1, number2) {\n  if (typeof number1 !== \"number\" || typeof number2 !== \"number\") {\n    throw new TypeError(\"Invalid input\");\n  }\n  return number1 + number2;\n}\n// Call the add function with invalid input\nconsole.log(add(\"apple\", \"orange\")); ",
         "questionType": "narrative",
         "answerOptions": [
           {
             "id": 1,
             "text": "Yes."
-          }
+          },
           {
-           "id": 2,
+            "id": 2,
             "text": "No."
           }
-        ]
-      },
         ]
       },
       {
@@ -99,7 +90,34 @@ console.log(add("apple", "orange")); ",
             "id": 3,
             "imageUrl": "harddrive.jpg",
             "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is a constructor in C++ used for?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "To create objects of a class"
+            "isCorrect": false
           },
+          {
+            "id": 2,
+            "text": "To initialize class variables"
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "text": "To define the main function",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "To allocate memory for objects",
+            "isCorrect": false
+          }
         ]
       }
     ]
@@ -109,7 +127,7 @@ console.log(add("apple", "orange")); ",
     "questions": [
       {
         "id": 1,
-        "text": "Whihc code defines an array in C?",
+        "text": "Which code defines an array in C?",
         "questionType": "imageSelection",
         "answerOptions": [
           {
@@ -126,28 +144,20 @@ console.log(add("apple", "orange")); ",
             "id": 3,
             "imageUrl": "carray.png",
             "isCorrect": true
-          },
+          }
         ]
       },
-     {
+      {
         "id": 2,
-        "text": "Will this run properly?: def divide(number1, number2):
-  try:
-    return number1 / number2
-  except ZeroDivisionError:
-    print(Cannot divide by zero)
-  except TypeError:
-    print(Invalid input)
-# Call the divide function with invalid input
-divide(apple, orange)",
+        "text": "Will this run properly?: def divide(number1, number2):\n  try:\n    return number1 / number2\n  except ZeroDivisionError:\n    print(Cannot divide by zero)\n  except TypeError:\n    print(Invalid input)\n# Call the divide function with invalid input\ndivide(apple, orange)",
         "questionType": "narrative",
         "answerOptions": [
           {
             "id": 1,
             "text": "Yes."
-          }
+          },
           {
-           "id": 2,
+            "id": 2,
             "text": "No."
           }
         ]
@@ -171,10 +181,64 @@ divide(apple, orange)",
             "id": 3,
             "text": "11",
             "isCorrect": true
-            },
+          },
+          {
+            "id": 4,
+            "text": "24",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What does the sizeof operator in C return?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "Size of a variable"
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "text": "Size of a data type"
+            "isCorrect": true
+          },
           {
             "id": 3,
-            "text": "24",
+            "text": "Size of a function",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "text": "Size of a file"
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Which of the following is used to comment a single line in Python?",
+        "questionType": "multipleChoice",
+        "answerOptions": [
+          {
+            "id": 1,
+            "text": "//"
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "text": "--"
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "text": "#",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "text": "/* */"
             "isCorrect": false
           }
         ]
