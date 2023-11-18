@@ -15,11 +15,8 @@
           .then(json => console.log(json));
     </script>
     <div class="container">
-        <!-- Main Page -->
         <div id="main-page">
             <h1>Welcome to the Quiz App</h1>
-
-            <!-- Quiz Selection Form -->
             <form id="start-quiz-form">
                 <div class="form-group">
                     <label for="name">Enter Your Name</label>
@@ -38,39 +35,35 @@
             </form>
         </div>
 
-        <!-- Quiz View -->
         <div id="quiz-view" style="display: none;">
             <h2 id="question-text"></h2>
             <div id="answer-options" class="form-check"></div>
             <button id="submit-answer" class="btn btn-primary">Submit</button>
         </div>
 
-        <!-- Feedback View -->
         <div id="feedback-view" style="display: none;">
             <p id="feedback-text"></p>
             <button id="got-it-button" class="btn btn-primary">Got It</button>
         </div>
 
-        <!-- Scoreboard -->
         <div id="scoreboard" style="display: none;">
             <p>Questions answered: <span id="answered-count">0</span></p>
             <p>Elapsed time: <span id="elapsed-time">0</span> seconds</p>
             <p>Total score: <span id="total-score">0</span></p>
         </div>
 
-        <!-- Completion View -->
         <div id="completion-view" style="display: none;">
             <h2 id="completion-message"></h2>
             <button id="retry-quiz" class="btn btn-primary">Retry Quiz</button>
             <button id="return-to-main" class="btn btn-primary">Return to Main Page</button>
         </div>
     </div>
-
-    <!-- App.js Script -->
     <script src="app.js">
            </script>
 
-    <script id="main-page-template" type="text/x-handlebars-template">
+    <script id="main-page-template" type="text/x-handlebars-template">    
+<script src="path/to/popper.min.js"></script>
+<script src="path/to/bootstrap.min.js"></script>
     </script>
 </body>
 </html>
